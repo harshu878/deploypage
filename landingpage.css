@@ -1,0 +1,173 @@
+.navbar{
+    color: white;
+    background-image: url('https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+}
+img {
+width: 100%;
+
+}
+.one {
+    grid-area: one;
+  }
+
+  .two {
+    grid-area: two;
+
+  }
+ .two img {
+    size:cover;width:100%;height:100%;
+    /* border:1px solid black; */
+ }
+  .three {
+    grid-area: three;
+  }
+  .top {
+    display: flex;
+    padding: 1%;
+    color: white;
+  }
+  .tags{
+    padding: 10%;
+  }
+ .tagflex button {
+    background-color: rgb(175, 165, 165);
+    border-style: none;
+    margin: .4rem;
+ }
+ .tagflex {
+    display: flex;
+    
+ }
+  .four {
+    grid-area: four;
+  }
+  .worksection{
+    text-align: center;
+    padding: 10%;
+  }
+.workgrid {
+    display: grid;
+    grid-gap: 2em;
+    /* grid-template-columns: 20% auto; */
+    grid-template-areas:
+    "one  one two two"
+    "three four  two two"
+ 
+  }
+  .post {
+    display: flex;
+    font-size: .5rem;
+    line-height: 1em;
+  }
+
+  .postimg{
+   width: 25%
+  }
+ .popular {
+    display: grid;
+   
+    grid-template-areas:
+   
+        "post post"
+        "post post"
+        "post post"
+       
+ }
+ .navbody{
+    padding: 20%;
+    text-align: center;
+ }
+ .posts{
+    display: grid;
+    padding: 10%;
+    grid-template-areas:
+        "popular1 philo"
+        
+ }
+
+.philo{
+    font-size: small;
+}
+  /*for Mobile Devices */
+  @media (max-width: 480px) {
+    /* body {
+        background-color: red;
+    } */
+    .buttons {
+        display: grid;
+        grid-template-areas:
+        "b1"
+        'b2'
+      }
+    .posts{
+        display: grid;
+        padding: 10%;
+        grid-template-areas:
+            "popular1"
+            "philo"
+            
+     }
+    .workgrid {
+        display: grid;
+        grid-gap: 2em;
+        /* grid-template-columns: 20% auto; */
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+     
+      }
+      .popular {
+        display: grid;
+       
+        grid-template-areas:
+       
+            "post"
+            "post"
+            "post"
+            "post"
+            "post"
+            "post"
+           
+     }
+
+}
+/* for Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* body {
+        background-color: yellow;
+    } */
+    /* .one img {
+        size:cover;
+        width:100%;
+       height:50%;
+        /* border:1px solid black; */
+        .popular {
+            display: grid;
+           
+            grid-template-areas:
+           
+                "post"
+                "post"
+                "post"
+                "post"
+                "post"
+                "post"
+               
+         }
+     
+
+    .workgrid {
+        display: grid;
+        grid-gap: 2em;
+        /* grid-template-columns: 20% auto; */
+        grid-template-areas:
+        "one one one one "
+        "two two three three"
+        
+        "four four four four"
+        "four four four four"
+     
+      }
+}
